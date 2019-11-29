@@ -1,43 +1,43 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+        <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-<body>
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+    </head>
+    <body>
 
-<h2>Filterable Table</h2>
-<p>Type something in the input field to search the table for first names, last names or emails:</p>
-<input id="myInput" type="text" placeholder="Search..">
-<br><br>
+        <h2>Library Repositories on GitHub</h2>
+        <p>Type something in the input field to search the table for projects</p>
+        <input id="myInput" type="text" placeholder="Search ...">
+        <br><br>
 
 <table>
   <thead>
@@ -52,8 +52,7 @@ tr:nth-child(even) {
   </tr>
   </thead>
   <tbody id="myTable">
-  <tr><td>A digital library of all the courses that are teached at University IBN Khaldoun of Tiaret</td><td>TresorUIK.github.io</td><td>0</td><td>0</td><td>False</td><td>2019-10-07T23:06:39Z</td><td>https://github.com/tresoruik/TresorUIK.github.io</td></tr>
-<tr><td>National Library of Australia</td><td>pavo</td><td>2</td><td>0</td><td>False</td><td>2017-05-22T23:24:05Z</td><td>https://github.com/nla/pavo</td></tr>
+  <tr><td>National Library of Australia</td><td>pavo</td><td>2</td><td>0</td><td>False</td><td>2017-05-22T23:24:05Z</td><td>https://github.com/nla/pavo</td></tr>
 <tr><td>National Library of Australia</td><td>yaz</td><td>1</td><td>0</td><td>False</td><td>2015-09-02T13:03:43Z</td><td>https://github.com/nla/yaz</td></tr>
 <tr><td>National Library of Australia</td><td>simpleserver</td><td>0</td><td>0</td><td>False</td><td>2015-01-30T03:39:04Z</td><td>https://github.com/nla/simpleserver</td></tr>
 <tr><td>National Library of Australia</td><td>yaz4j</td><td>0</td><td>2</td><td>False</td><td>2014-03-12T14:10:55Z</td><td>https://github.com/nla/yaz4j</td></tr>
@@ -297,14 +296,14 @@ tr:nth-child(even) {
 <tr><td>University of Alberta Libraries</td><td>placename-harvest</td><td>0</td><td>0</td><td>False</td><td>2015-05-04T22:36:07Z</td><td>https://github.com/ualbertalib/placename-harvest</td></tr>
 <tr><td>University of Alberta Libraries</td><td>metadata</td><td>13</td><td>5</td><td>False</td><td>2019-11-21T20:55:35Z</td><td>https://github.com/ualbertalib/metadata</td></tr>
 <tr><td>University of Alberta Libraries</td><td>LibraryAPIs</td><td>0</td><td>0</td><td>False</td><td>2015-11-09T20:40:24Z</td><td>https://github.com/ualbertalib/LibraryAPIs</td></tr>
-<tr><td>University of Alberta Libraries</td><td>avalon</td><td>2</td><td>3</td><td>True</td><td>2019-11-28T20:27:07Z</td><td>https://github.com/ualbertalib/avalon</td></tr>
+<tr><td>University of Alberta Libraries</td><td>avalon</td><td>2</td><td>3</td><td>True</td><td>2019-11-29T18:22:58Z</td><td>https://github.com/ualbertalib/avalon</td></tr>
 <tr><td>University of Alberta Libraries</td><td>hydra-jetty</td><td>0</td><td>0</td><td>True</td><td>2018-08-14T17:30:00Z</td><td>https://github.com/ualbertalib/hydra-jetty</td></tr>
 <tr><td>University of Alberta Libraries</td><td>CORAL-Main</td><td>0</td><td>0</td><td>True</td><td>2015-11-18T18:15:57Z</td><td>https://github.com/ualbertalib/CORAL-Main</td></tr>
 <tr><td>University of Alberta Libraries</td><td>licensing</td><td>0</td><td>0</td><td>True</td><td>2015-11-18T18:19:58Z</td><td>https://github.com/ualbertalib/licensing</td></tr>
 <tr><td>University of Alberta Libraries</td><td>organizations</td><td>0</td><td>0</td><td>True</td><td>2015-11-18T18:24:14Z</td><td>https://github.com/ualbertalib/organizations</td></tr>
 <tr><td>University of Alberta Libraries</td><td>digitization_script</td><td>0</td><td>0</td><td>False</td><td>2019-10-25T19:18:50Z</td><td>https://github.com/ualbertalib/digitization_script</td></tr>
 <tr><td>University of Alberta Libraries</td><td>ansible-hydra</td><td>0</td><td>0</td><td>True</td><td>2016-01-25T23:14:14Z</td><td>https://github.com/ualbertalib/ansible-hydra</td></tr>
-<tr><td>University of Alberta Libraries</td><td>NEOSDiscovery</td><td>4</td><td>3</td><td>False</td><td>2019-11-26T22:07:29Z</td><td>https://github.com/ualbertalib/NEOSDiscovery</td></tr>
+<tr><td>University of Alberta Libraries</td><td>NEOSDiscovery</td><td>4</td><td>3</td><td>False</td><td>2019-11-29T17:04:30Z</td><td>https://github.com/ualbertalib/NEOSDiscovery</td></tr>
 <tr><td>University of Alberta Libraries</td><td>rails-sitemap</td><td>0</td><td>0</td><td>True</td><td>2016-05-06T17:34:33Z</td><td>https://github.com/ualbertalib/rails-sitemap</td></tr>
 <tr><td>University of Alberta Libraries</td><td>modal_logic</td><td>0</td><td>0</td><td>True</td><td>2016-05-11T21:29:22Z</td><td>https://github.com/ualbertalib/modal_logic</td></tr>
 <tr><td>University of Alberta Libraries</td><td>sufia7</td><td>1</td><td>0</td><td>False</td><td>2016-07-26T21:04:29Z</td><td>https://github.com/ualbertalib/sufia7</td></tr>
@@ -557,7 +556,7 @@ tr:nth-child(even) {
 <tr><td>University of Saskatchewan Library</td><td>sfx-tools</td><td>1</td><td>0</td><td>False</td><td>2019-03-11T11:58:13Z</td><td>https://github.com/usask-library/sfx-tools</td></tr>
 <tr><td>University of Saskatchewan Library</td><td>kenny</td><td>1</td><td>0</td><td>False</td><td>2017-10-04T12:16:03Z</td><td>https://github.com/usask-library/kenny</td></tr>
 <tr><td>University of Saskatchewan Library</td><td>bootstrap3</td><td>0</td><td>0</td><td>True</td><td>2019-09-03T19:39:58Z</td><td>https://github.com/usask-library/bootstrap3</td></tr>
-<tr><td>University of Saskatchewan Library</td><td>ezproxy-stanzas</td><td>0</td><td>0</td><td>False</td><td>2019-11-28T18:29:17Z</td><td>https://github.com/usask-library/ezproxy-stanzas</td></tr>
+<tr><td>University of Saskatchewan Library</td><td>ezproxy-stanzas</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T18:40:35Z</td><td>https://github.com/usask-library/ezproxy-stanzas</td></tr>
 <tr><td>University of Saskatchewan Library</td><td>costanza</td><td>7</td><td>0</td><td>False</td><td>2019-11-14T19:03:15Z</td><td>https://github.com/usask-library/costanza</td></tr>
 <tr><td>The Digital Scholarship Unit at the University of Toronto Scarborough Library</td><td>folderCreator</td><td>0</td><td>1</td><td>False</td><td>2014-06-18T16:54:45Z</td><td>https://github.com/digitalutsc/folderCreator</td></tr>
 <tr><td>The Digital Scholarship Unit at the University of Toronto Scarborough Library</td><td>buildingwithoutadobe</td><td>1</td><td>1</td><td>False</td><td>2018-12-06T10:38:05Z</td><td>https://github.com/digitalutsc/buildingwithoutadobe</td></tr>
@@ -1056,7 +1055,7 @@ tr:nth-child(even) {
 <tr><td>National Library of Technology</td><td>obsahator</td><td>0</td><td>0</td><td>False</td><td>2019-04-08T12:03:22Z</td><td>https://github.com/techlib/obsahator</td></tr>
 <tr><td>National Library of Technology</td><td>kerator</td><td>0</td><td>0</td><td>False</td><td>2019-04-08T12:02:55Z</td><td>https://github.com/techlib/kerator</td></tr>
 <tr><td>National Library of Technology</td><td>pichator</td><td>0</td><td>0</td><td>False</td><td>2019-10-22T13:24:40Z</td><td>https://github.com/techlib/pichator</td></tr>
-<tr><td>National Library of Technology</td><td>czechelib-stats</td><td>0</td><td>0</td><td>False</td><td>2019-09-10T09:11:46Z</td><td>https://github.com/techlib/czechelib-stats</td></tr>
+<tr><td>National Library of Technology</td><td>czechelib-stats</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T17:38:05Z</td><td>https://github.com/techlib/czechelib-stats</td></tr>
 <tr><td>National Library of Technology</td><td>metadator</td><td>0</td><td>1</td><td>False</td><td>2019-07-03T10:37:21Z</td><td>https://github.com/techlib/metadator</td></tr>
 <tr><td>National Library of Technology</td><td>ntk-aio-quota</td><td>0</td><td>0</td><td>False</td><td>2019-11-05T16:45:46Z</td><td>https://github.com/techlib/ntk-aio-quota</td></tr>
 <tr><td>National Library of the Czech Republic</td><td>sysaid-lokalizace</td><td>0</td><td>0</td><td>False</td><td>2017-09-19T22:47:56Z</td><td>https://github.com/NLCR/sysaid-lokalizace</td></tr>
@@ -1123,7 +1122,7 @@ tr:nth-child(even) {
 <tr><td>Danskernes Digitale Bibliotek</td><td>Litteratursiden</td><td>1</td><td>0</td><td>False</td><td>2018-08-06T11:26:26Z</td><td>https://github.com/danskernesdigitalebibliotek/Litteratursiden</td></tr>
 <tr><td>Danskernes Digitale Bibliotek</td><td>danskernesdigitalebibliotek.github.io</td><td>0</td><td>0</td><td>False</td><td>2019-10-15T12:37:09Z</td><td>https://github.com/danskernesdigitalebibliotek/danskernesdigitalebibliotek.github.io</td></tr>
 <tr><td>Danskernes Digitale Bibliotek</td><td>Biblioteket-app</td><td>0</td><td>0</td><td>False</td><td>2018-02-06T10:25:20Z</td><td>https://github.com/danskernesdigitalebibliotek/Biblioteket-app</td></tr>
-<tr><td>Danskernes Digitale Bibliotek</td><td>ddb-cover-service</td><td>0</td><td>1</td><td>False</td><td>2019-11-28T10:13:06Z</td><td>https://github.com/danskernesdigitalebibliotek/ddb-cover-service</td></tr>
+<tr><td>Danskernes Digitale Bibliotek</td><td>ddb-cover-service</td><td>0</td><td>1</td><td>False</td><td>2019-11-29T12:42:34Z</td><td>https://github.com/danskernesdigitalebibliotek/ddb-cover-service</td></tr>
 <tr><td>Danskernes Digitale Bibliotek</td><td>plantuml</td><td>0</td><td>0</td><td>False</td><td>2019-11-22T14:24:39Z</td><td>https://github.com/danskernesdigitalebibliotek/plantuml</td></tr>
 <tr><td>Danskernes Digitale Bibliotek</td><td>ddb-cms_react_poc</td><td>0</td><td>0</td><td>False</td><td>2019-06-18T08:07:28Z</td><td>https://github.com/danskernesdigitalebibliotek/ddb-cms_react_poc</td></tr>
 <tr><td>Danskernes Digitale Bibliotek</td><td>ding2</td><td>0</td><td>0</td><td>True</td><td>2019-07-30T12:48:59Z</td><td>https://github.com/danskernesdigitalebibliotek/ding2</td></tr>
@@ -1189,10 +1188,10 @@ tr:nth-child(even) {
 <tr><td>National Library of Finland</td><td>RecordManager</td><td>33</td><td>21</td><td>False</td><td>2019-11-28T15:31:05Z</td><td>https://github.com/NatLibFi/RecordManager</td></tr>
 <tr><td>National Library of Finland</td><td>SolrPlugins</td><td>2</td><td>3</td><td>False</td><td>2019-07-31T10:12:36Z</td><td>https://github.com/NatLibFi/SolrPlugins</td></tr>
 <tr><td>National Library of Finland</td><td>NDL-VuFind-Solr</td><td>1</td><td>2</td><td>False</td><td>2016-11-07T11:19:59Z</td><td>https://github.com/NatLibFi/NDL-VuFind-Solr</td></tr>
-<tr><td>National Library of Finland</td><td>NDL-VuFind2</td><td>12</td><td>32</td><td>True</td><td>2019-11-29T10:02:32Z</td><td>https://github.com/NatLibFi/NDL-VuFind2</td></tr>
+<tr><td>National Library of Finland</td><td>NDL-VuFind2</td><td>12</td><td>32</td><td>True</td><td>2019-11-29T13:18:07Z</td><td>https://github.com/NatLibFi/NDL-VuFind2</td></tr>
 <tr><td>National Library of Finland</td><td>Skosmos</td><td>123</td><td>42</td><td>False</td><td>2019-11-28T12:40:58Z</td><td>https://github.com/NatLibFi/Skosmos</td></tr>
 <tr><td>National Library of Finland</td><td>ONKILegacy</td><td>0</td><td>0</td><td>False</td><td>2016-09-02T06:59:39Z</td><td>https://github.com/NatLibFi/ONKILegacy</td></tr>
-<tr><td>National Library of Finland</td><td>Finto-data</td><td>6</td><td>6</td><td>False</td><td>2019-11-29T11:01:23Z</td><td>https://github.com/NatLibFi/Finto-data</td></tr>
+<tr><td>National Library of Finland</td><td>Finto-data</td><td>6</td><td>6</td><td>False</td><td>2019-11-29T13:02:13Z</td><td>https://github.com/NatLibFi/Finto-data</td></tr>
 <tr><td>National Library of Finland</td><td>Finto-test</td><td>1</td><td>0</td><td>False</td><td>2018-06-27T18:35:35Z</td><td>https://github.com/NatLibFi/Finto-test</td></tr>
 <tr><td>National Library of Finland</td><td>MARC-Record-AutoPunct</td><td>1</td><td>0</td><td>False</td><td>2017-07-07T10:58:32Z</td><td>https://github.com/NatLibFi/MARC-Record-AutoPunct</td></tr>
 <tr><td>National Library of Finland</td><td>MARC-File-OAI_MARCXML</td><td>0</td><td>0</td><td>False</td><td>2016-11-18T12:31:28Z</td><td>https://github.com/NatLibFi/MARC-File-OAI_MARCXML</td></tr>
@@ -1451,7 +1450,7 @@ tr:nth-child(even) {
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>slub-find-neutral</td><td>0</td><td>0</td><td>False</td><td>2016-11-22T13:47:09Z</td><td>https://github.com/slub/slub-find-neutral</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>dnburnlib</td><td>0</td><td>0</td><td>False</td><td>2017-09-08T06:18:58Z</td><td>https://github.com/slub/dnburnlib</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>t3jquery</td><td>0</td><td>0</td><td>True</td><td>2017-04-20T08:42:51Z</td><td>https://github.com/slub/t3jquery</td></tr>
-<tr><td>SLUB Saxon State and University Library Dresden</td><td>slub_forms</td><td>0</td><td>2</td><td>False</td><td>2019-10-23T08:14:15Z</td><td>https://github.com/slub/slub_forms</td></tr>
+<tr><td>SLUB Saxon State and University Library Dresden</td><td>slub_forms</td><td>0</td><td>2</td><td>False</td><td>2019-11-29T14:42:43Z</td><td>https://github.com/slub/slub_forms</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>jsonl-fstats</td><td>2</td><td>1</td><td>False</td><td>2018-04-05T11:56:06Z</td><td>https://github.com/slub/jsonl-fstats</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>marc2jsonl</td><td>3</td><td>1</td><td>False</td><td>2019-10-17T03:29:31Z</td><td>https://github.com/slub/marc2jsonl</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>csv2scldj</td><td>2</td><td>1</td><td>False</td><td>2019-08-02T08:59:44Z</td><td>https://github.com/slub/csv2scldj</td></tr>
@@ -1472,7 +1471,7 @@ tr:nth-child(even) {
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>xml_sitemap</td><td>0</td><td>0</td><td>False</td><td>2019-11-19T15:14:12Z</td><td>https://github.com/slub/xml_sitemap</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>switchconfig</td><td>1</td><td>0</td><td>False</td><td>2019-10-28T13:34:14Z</td><td>https://github.com/slub/switchconfig</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>ldjesmaterializer</td><td>1</td><td>2</td><td>False</td><td>2019-05-07T13:25:06Z</td><td>https://github.com/slub/ldjesmaterializer</td></tr>
-<tr><td>SLUB Saxon State and University Library Dresden</td><td>efre-lod-api</td><td>1</td><td>0</td><td>False</td><td>2019-11-28T14:13:42Z</td><td>https://github.com/slub/efre-lod-api</td></tr>
+<tr><td>SLUB Saxon State and University Library Dresden</td><td>efre-lod-api</td><td>1</td><td>0</td><td>False</td><td>2019-11-29T12:43:50Z</td><td>https://github.com/slub/efre-lod-api</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>mets-mods2tei</td><td>3</td><td>2</td><td>False</td><td>2019-11-28T10:07:31Z</td><td>https://github.com/slub/mets-mods2tei</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>replacemarcchars</td><td>1</td><td>1</td><td>False</td><td>2019-06-21T10:38:34Z</td><td>https://github.com/slub/replacemarcchars</td></tr>
 <tr><td>SLUB Saxon State and University Library Dresden</td><td>marcsigel</td><td>1</td><td>1</td><td>False</td><td>2019-08-13T07:46:47Z</td><td>https://github.com/slub/marcsigel</td></tr>
@@ -1596,7 +1595,7 @@ tr:nth-child(even) {
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>typo3-germaniasacra</td><td>0</td><td>0</td><td>False</td><td>2013-12-02T09:14:46Z</td><td>https://github.com/subugoe/typo3-germaniasacra</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>Test-AdW-1</td><td>0</td><td>1</td><td>False</td><td>2014-02-20T11:24:13Z</td><td>https://github.com/subugoe/Test-AdW-1</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>typo3-jkzvdd</td><td>0</td><td>0</td><td>False</td><td>2019-04-02T14:14:17Z</td><td>https://github.com/subugoe/typo3-jkzvdd</td></tr>
-<tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>univerlag</td><td>0</td><td>2</td><td>False</td><td>2019-11-26T15:15:22Z</td><td>https://github.com/subugoe/univerlag</td></tr>
+<tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>univerlag</td><td>0</td><td>2</td><td>False</td><td>2019-11-29T14:26:45Z</td><td>https://github.com/subugoe/univerlag</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>Meta-Data-Access-Service</td><td>0</td><td>0</td><td>False</td><td>2014-07-15T14:23:24Z</td><td>https://github.com/subugoe/Meta-Data-Access-Service</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>topic-maps</td><td>0</td><td>0</td><td>False</td><td>2014-03-28T15:54:55Z</td><td>https://github.com/subugoe/topic-maps</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>typo3-subforms</td><td>0</td><td>0</td><td>False</td><td>2016-04-08T09:31:42Z</td><td>https://github.com/subugoe/typo3-subforms</td></tr>
@@ -1614,7 +1613,7 @@ tr:nth-child(even) {
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>ous-registration</td><td>0</td><td>0</td><td>False</td><td>2014-07-07T07:37:24Z</td><td>https://github.com/subugoe/ous-registration</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>typo3-tmpl_gjz</td><td>0</td><td>0</td><td>False</td><td>2019-09-11T15:42:04Z</td><td>https://github.com/subugoe/typo3-tmpl_gjz</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>ipoa-html-css</td><td>0</td><td>0</td><td>False</td><td>2014-08-21T11:07:56Z</td><td>https://github.com/subugoe/ipoa-html-css</td></tr>
-<tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>typo3-tmpl_ipoa</td><td>0</td><td>1</td><td>False</td><td>2019-11-22T15:47:55Z</td><td>https://github.com/subugoe/typo3-tmpl_ipoa</td></tr>
+<tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>typo3-tmpl_ipoa</td><td>0</td><td>1</td><td>False</td><td>2019-11-29T15:40:33Z</td><td>https://github.com/subugoe/typo3-tmpl_ipoa</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>ipoa-html-template</td><td>1</td><td>0</td><td>False</td><td>2015-03-10T05:20:17Z</td><td>https://github.com/subugoe/ipoa-html-template</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>ipoa-html-mockup</td><td>0</td><td>0</td><td>False</td><td>2014-10-01T04:51:31Z</td><td>https://github.com/subugoe/ipoa-html-mockup</td></tr>
 <tr><td>Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen)</td><td>Subugoe.Jobqueue.Redis</td><td>0</td><td>0</td><td>False</td><td>2017-02-02T17:27:49Z</td><td>https://github.com/subugoe/Subugoe.Jobqueue.Redis</td></tr>
@@ -1741,7 +1740,7 @@ tr:nth-child(even) {
 <tr><td>Staats- und Universitätsbibliothek Hamburg</td><td>HOS-schaufenster</td><td>0</td><td>0</td><td>False</td><td>2019-03-28T15:37:40Z</td><td>https://github.com/subhh/HOS-schaufenster</td></tr>
 <tr><td>Staats- und Universitätsbibliothek Hamburg</td><td>slub_events</td><td>0</td><td>0</td><td>True</td><td>2019-05-07T11:44:30Z</td><td>https://github.com/subhh/slub_events</td></tr>
 <tr><td>Staats- und Universitätsbibliothek Hamburg</td><td>HOS-OAI-Dashboard-Typo3</td><td>0</td><td>0</td><td>False</td><td>2019-07-03T09:31:54Z</td><td>https://github.com/subhh/HOS-OAI-Dashboard-Typo3</td></tr>
-<tr><td>Staats- und Universitätsbibliothek Hamburg</td><td>HOS-Metadata-Visualisation</td><td>0</td><td>0</td><td>False</td><td>2019-08-23T14:02:33Z</td><td>https://github.com/subhh/HOS-Metadata-Visualisation</td></tr>
+<tr><td>Staats- und Universitätsbibliothek Hamburg</td><td>HOS-Metadata-Visualisation</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T12:58:38Z</td><td>https://github.com/subhh/HOS-Metadata-Visualisation</td></tr>
 <tr><td>Staats- und Universitätsbibliothek Hamburg</td><td>HOS-visualization</td><td>0</td><td>0</td><td>False</td><td>2019-09-06T07:14:47Z</td><td>https://github.com/subhh/HOS-visualization</td></tr>
 <tr><td>Universitätsbibliothek der TU Hamburg</td><td>BibsOnGitHub</td><td>0</td><td>0</td><td>True</td><td>2016-08-08T13:55:20Z</td><td>https://github.com/tubhh/BibsOnGitHub</td></tr>
 <tr><td>Universitätsbibliothek der TU Hamburg</td><td>JournalTouch</td><td>0</td><td>0</td><td>True</td><td>2016-08-09T13:25:56Z</td><td>https://github.com/tubhh/JournalTouch</td></tr>
@@ -1774,7 +1773,7 @@ tr:nth-child(even) {
 <tr><td>ZBW - Leibniz Information Centre for Economics</td><td>zbw.ejData</td><td>0</td><td>1</td><td>False</td><td>2017-11-22T11:54:37Z</td><td>https://github.com/zbw/zbw.ejData</td></tr>
 <tr><td>ZBW - Leibniz Information Centre for Economics</td><td>zbw.ejEon</td><td>0</td><td>1</td><td>False</td><td>2017-11-22T12:20:17Z</td><td>https://github.com/zbw/zbw.ejEon</td></tr>
 <tr><td>ZBW - Leibniz Information Centre for Economics</td><td>stwfsa</td><td>0</td><td>0</td><td>False</td><td>2018-10-13T17:39:10Z</td><td>https://github.com/zbw/stwfsa</td></tr>
-<tr><td>ZBW - Leibniz Information Centre for Economics</td><td>stw-mappings</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T09:54:23Z</td><td>https://github.com/zbw/stw-mappings</td></tr>
+<tr><td>ZBW - Leibniz Information Centre for Economics</td><td>stw-mappings</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T15:14:46Z</td><td>https://github.com/zbw/stw-mappings</td></tr>
 <tr><td>ZBW - Leibniz Information Centre for Economics</td><td>mausi</td><td>0</td><td>0</td><td>False</td><td>2018-10-24T11:26:01Z</td><td>https://github.com/zbw/mausi</td></tr>
 <tr><td>ZBW - Leibniz Information Centre for Economics</td><td>releasetool</td><td>0</td><td>0</td><td>False</td><td>2019-10-16T09:08:41Z</td><td>https://github.com/zbw/releasetool</td></tr>
 <tr><td>ZBW - Leibniz Information Centre for Economics</td><td>cdv2018-pressemappe20</td><td>1</td><td>0</td><td>False</td><td>2018-11-16T15:56:00Z</td><td>https://github.com/zbw/cdv2018-pressemappe20</td></tr>
@@ -2174,7 +2173,7 @@ tr:nth-child(even) {
 <tr><td>Max Planck Digital Library - MPDL</td><td>bio-formats-service</td><td>0</td><td>0</td><td>False</td><td>2014-09-30T17:28:56Z</td><td>https://github.com/MPDL/bio-formats-service</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>fits-service</td><td>0</td><td>1</td><td>False</td><td>2014-10-07T15:34:17Z</td><td>https://github.com/MPDL/fits-service</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>unibiAPC</td><td>0</td><td>0</td><td>True</td><td>2018-11-23T08:03:42Z</td><td>https://github.com/MPDL/unibiAPC</td></tr>
-<tr><td>Max Planck Digital Library - MPDL</td><td>imeji</td><td>8</td><td>2</td><td>True</td><td>2019-11-28T14:12:00Z</td><td>https://github.com/MPDL/imeji</td></tr>
+<tr><td>Max Planck Digital Library - MPDL</td><td>imeji</td><td>8</td><td>2</td><td>True</td><td>2019-11-29T16:54:36Z</td><td>https://github.com/MPDL/imeji</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>DOI</td><td>1</td><td>1</td><td>False</td><td>2019-07-12T06:30:27Z</td><td>https://github.com/MPDL/DOI</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>escidoc-core</td><td>1</td><td>0</td><td>True</td><td>2016-08-10T15:11:14Z</td><td>https://github.com/MPDL/escidoc-core</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>escidoc-core-analyzers</td><td>0</td><td>0</td><td>True</td><td>2016-08-10T15:10:34Z</td><td>https://github.com/MPDL/escidoc-core-analyzers</td></tr>
@@ -2192,7 +2191,7 @@ tr:nth-child(even) {
 <tr><td>Max Planck Digital Library - MPDL</td><td>KEEPER</td><td>6</td><td>0</td><td>False</td><td>2019-11-19T09:39:00Z</td><td>https://github.com/MPDL/KEEPER</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>imeji-deb</td><td>0</td><td>0</td><td>True</td><td>2016-12-16T13:51:35Z</td><td>https://github.com/MPDL/imeji-deb</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>imeji_sass</td><td>0</td><td>0</td><td>True</td><td>2019-08-29T09:02:23Z</td><td>https://github.com/MPDL/imeji_sass</td></tr>
-<tr><td>Max Planck Digital Library - MPDL</td><td>imeji-gui-testing</td><td>1</td><td>0</td><td>True</td><td>2019-10-30T11:02:17Z</td><td>https://github.com/MPDL/imeji-gui-testing</td></tr>
+<tr><td>Max Planck Digital Library - MPDL</td><td>imeji-gui-testing</td><td>1</td><td>0</td><td>True</td><td>2019-11-29T12:39:07Z</td><td>https://github.com/MPDL/imeji-gui-testing</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>imeji-docs</td><td>0</td><td>0</td><td>True</td><td>2019-11-11T09:23:20Z</td><td>https://github.com/MPDL/imeji-docs</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>pyimeji</td><td>0</td><td>0</td><td>True</td><td>2017-05-04T10:29:52Z</td><td>https://github.com/MPDL/pyimeji</td></tr>
 <tr><td>Max Planck Digital Library - MPDL</td><td>PubManAutomatedTesting</td><td>0</td><td>1</td><td>False</td><td>2016-10-28T11:59:49Z</td><td>https://github.com/MPDL/PubManAutomatedTesting</td></tr>
@@ -2276,7 +2275,7 @@ tr:nth-child(even) {
 <tr><td>Rostock University Library</td><td>signaturetikettendruck</td><td>0</td><td>0</td><td>False</td><td>2019-03-28T18:48:54Z</td><td>https://github.com/ubrostock/signaturetikettendruck</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>ixTheo</td><td>1</td><td>3</td><td>False</td><td>2019-07-13T06:59:03Z</td><td>https://github.com/ubtue/ixTheo</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>KrimDok</td><td>0</td><td>1</td><td>False</td><td>2018-12-14T12:43:06Z</td><td>https://github.com/ubtue/KrimDok</td></tr>
-<tr><td>Universitätsbibliothek Tübingen</td><td>ub_tools</td><td>4</td><td>2</td><td>False</td><td>2019-11-28T10:06:52Z</td><td>https://github.com/ubtue/ub_tools</td></tr>
+<tr><td>Universitätsbibliothek Tübingen</td><td>ub_tools</td><td>4</td><td>2</td><td>False</td><td>2019-11-29T13:28:47Z</td><td>https://github.com/ubtue/ub_tools</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>ixtheo_classification</td><td>0</td><td>0</td><td>False</td><td>2018-02-12T15:11:54Z</td><td>https://github.com/ubtue/ixtheo_classification</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>solrmarc</td><td>0</td><td>0</td><td>True</td><td>2019-01-24T10:53:12Z</td><td>https://github.com/ubtue/solrmarc</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>ubTueTheme</td><td>0</td><td>0</td><td>False</td><td>2018-02-09T12:23:38Z</td><td>https://github.com/ubtue/ubTueTheme</td></tr>
@@ -2288,7 +2287,7 @@ tr:nth-child(even) {
 <tr><td>Universitätsbibliothek Tübingen</td><td>zotero-translators</td><td>1</td><td>1</td><td>True</td><td>2019-11-27T13:57:23Z</td><td>https://github.com/ubtue/zotero-translators</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>zotero-translation-server-old</td><td>0</td><td>0</td><td>True</td><td>2018-09-03T13:58:21Z</td><td>https://github.com/ubtue/zotero-translation-server-old</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>scaffold</td><td>0</td><td>0</td><td>True</td><td>2019-01-08T13:25:51Z</td><td>https://github.com/ubtue/scaffold</td></tr>
-<tr><td>Universitätsbibliothek Tübingen</td><td>zotero-enhancement-maps</td><td>2</td><td>2</td><td>False</td><td>2019-11-29T11:12:47Z</td><td>https://github.com/ubtue/zotero-enhancement-maps</td></tr>
+<tr><td>Universitätsbibliothek Tübingen</td><td>zotero-enhancement-maps</td><td>2</td><td>2</td><td>False</td><td>2019-11-29T12:36:47Z</td><td>https://github.com/ubtue/zotero-enhancement-maps</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>DatenProbleme</td><td>0</td><td>0</td><td>False</td><td>2018-11-07T15:07:55Z</td><td>https://github.com/ubtue/DatenProbleme</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>zotero-translation-server</td><td>0</td><td>0</td><td>True</td><td>2019-11-04T16:28:10Z</td><td>https://github.com/ubtue/zotero-translation-server</td></tr>
 <tr><td>Universitätsbibliothek Tübingen</td><td>fid</td><td>0</td><td>0</td><td>False</td><td>2019-04-10T12:28:40Z</td><td>https://github.com/ubtue/fid</td></tr>
@@ -2578,7 +2577,7 @@ tr:nth-child(even) {
 <tr><td>National Library of Norway - Web Archive</td><td>veidemann-cache</td><td>0</td><td>0</td><td>False</td><td>2019-10-10T14:37:29Z</td><td>https://github.com/nlnwa/veidemann-cache</td></tr>
 <tr><td>National Library of Norway - Web Archive</td><td>veidemann-certgen</td><td>0</td><td>0</td><td>False</td><td>2018-02-12T09:47:24Z</td><td>https://github.com/nlnwa/veidemann-certgen</td></tr>
 <tr><td>National Library of Norway - Web Archive</td><td>veidemann-api</td><td>0</td><td>1</td><td>False</td><td>2019-11-20T11:51:51Z</td><td>https://github.com/nlnwa/veidemann-api</td></tr>
-<tr><td>National Library of Norway - Web Archive</td><td>veidemannctl</td><td>0</td><td>0</td><td>False</td><td>2019-11-01T15:27:56Z</td><td>https://github.com/nlnwa/veidemannctl</td></tr>
+<tr><td>National Library of Norway - Web Archive</td><td>veidemannctl</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T14:00:03Z</td><td>https://github.com/nlnwa/veidemannctl</td></tr>
 <tr><td>National Library of Norway - Web Archive</td><td>veidemann-warcvalidator</td><td>0</td><td>0</td><td>False</td><td>2019-02-26T08:55:43Z</td><td>https://github.com/nlnwa/veidemann-warcvalidator</td></tr>
 <tr><td>National Library of Norway - Web Archive</td><td>veidemann-api-gateway</td><td>0</td><td>0</td><td>False</td><td>2018-10-30T21:13:11Z</td><td>https://github.com/nlnwa/veidemann-api-gateway</td></tr>
 <tr><td>National Library of Norway - Web Archive</td><td>charts</td><td>1</td><td>0</td><td>False</td><td>2019-11-29T08:48:29Z</td><td>https://github.com/nlnwa/charts</td></tr>
@@ -2810,7 +2809,7 @@ tr:nth-child(even) {
 <tr><td>Library at University of Tromsø</td><td>DSpace-Synchronize-embargo</td><td>0</td><td>0</td><td>False</td><td>2018-06-07T11:10:29Z</td><td>https://github.com/UiT-UB/DSpace-Synchronize-embargo</td></tr>
 <tr><td>Library at University of Tromsø</td><td>vufind</td><td>0</td><td>0</td><td>True</td><td>2018-11-22T14:43:27Z</td><td>https://github.com/UiT-UB/vufind</td></tr>
 <tr><td>Library at University of Tromsø</td><td>Iportal-dspace</td><td>0</td><td>0</td><td>False</td><td>2019-11-05T11:30:36Z</td><td>https://github.com/UiT-UB/Iportal-dspace</td></tr>
-<tr><td>Library at University of Tromsø</td><td>Munin-dspace</td><td>0</td><td>0</td><td>False</td><td>2019-10-22T17:55:35Z</td><td>https://github.com/UiT-UB/Munin-dspace</td></tr>
+<tr><td>Library at University of Tromsø</td><td>Munin-dspace</td><td>0</td><td>0</td><td>False</td><td>2019-11-29T13:23:25Z</td><td>https://github.com/UiT-UB/Munin-dspace</td></tr>
 <tr><td>NTNU University Library</td><td>CrossRef2MARCXML</td><td>0</td><td>0</td><td>False</td><td>2014-01-21T23:08:41Z</td><td>https://github.com/NTNUUB/CrossRef2MARCXML</td></tr>
 <tr><td>Kachkanar Public Library</td><td>books-extension</td><td>0</td><td>0</td><td>False</td><td>2017-03-13T14:10:45Z</td><td>https://github.com/gorbib/books-extension</td></tr>
 <tr><td>Kachkanar Public Library</td><td>ios</td><td>1</td><td>0</td><td>False</td><td>2017-03-13T14:11:45Z</td><td>https://github.com/gorbib/ios</td></tr>
@@ -3165,7 +3164,7 @@ tr:nth-child(even) {
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>pysolr</td><td>0</td><td>0</td><td>True</td><td>2016-12-01T14:09:46Z</td><td>https://github.com/bodleian/pysolr</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>dmt-metadata-transformation</td><td>11</td><td>1</td><td>False</td><td>2019-10-06T16:53:56Z</td><td>https://github.com/bodleian/dmt-metadata-transformation</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>oxford-explorer</td><td>0</td><td>2</td><td>False</td><td>2018-06-19T09:11:32Z</td><td>https://github.com/bodleian/oxford-explorer</td></tr>
-<tr><td>The Bodleian Libraries of the University of Oxford</td><td>medieval-mss</td><td>13</td><td>12</td><td>False</td><td>2019-11-26T17:12:55Z</td><td>https://github.com/bodleian/medieval-mss</td></tr>
+<tr><td>The Bodleian Libraries of the University of Oxford</td><td>medieval-mss</td><td>13</td><td>12</td><td>False</td><td>2019-11-29T17:45:22Z</td><td>https://github.com/bodleian/medieval-mss</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>armenian-mss</td><td>0</td><td>0</td><td>False</td><td>2019-01-15T16:37:42Z</td><td>https://github.com/bodleian/armenian-mss</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>genizah-mss</td><td>0</td><td>0</td><td>False</td><td>2018-10-05T10:46:53Z</td><td>https://github.com/bodleian/genizah-mss</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>georgian-mss</td><td>0</td><td>1</td><td>False</td><td>2019-03-21T17:20:15Z</td><td>https://github.com/bodleian/georgian-mss</td></tr>
@@ -3177,7 +3176,7 @@ tr:nth-child(even) {
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>iipsrv</td><td>0</td><td>0</td><td>True</td><td>2019-01-14T16:06:07Z</td><td>https://github.com/bodleian/iipsrv</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>viewer-tests</td><td>0</td><td>0</td><td>False</td><td>2019-04-02T13:09:24Z</td><td>https://github.com/bodleian/viewer-tests</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>discovery</td><td>0</td><td>0</td><td>True</td><td>2019-04-04T21:30:09Z</td><td>https://github.com/bodleian/discovery</td></tr>
-<tr><td>The Bodleian Libraries of the University of Oxford</td><td>iiif_manifest_server</td><td>2</td><td>0</td><td>False</td><td>2019-11-28T21:57:48Z</td><td>https://github.com/bodleian/iiif_manifest_server</td></tr>
+<tr><td>The Bodleian Libraries of the University of Oxford</td><td>iiif_manifest_server</td><td>3</td><td>0</td><td>False</td><td>2019-11-29T11:33:44Z</td><td>https://github.com/bodleian/iiif_manifest_server</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>archivesspace</td><td>0</td><td>0</td><td>True</td><td>2019-11-26T13:52:12Z</td><td>https://github.com/bodleian/archivesspace</td></tr>
 <tr><td>The Bodleian Libraries of the University of Oxford</td><td>ead-misc</td><td>0</td><td>0</td><td>False</td><td>2019-11-28T09:21:22Z</td><td>https://github.com/bodleian/ead-misc</td></tr>
 <tr><td>Grand Valley State University Libraries</td><td>UI-Patterns</td><td>9</td><td>3</td><td>False</td><td>2018-03-21T16:15:37Z</td><td>https://github.com/gvsulib/UI-Patterns</td></tr>
@@ -3317,7 +3316,7 @@ tr:nth-child(even) {
 <tr><td>Bentley Historical Library</td><td>bhl_collection_setup</td><td>0</td><td>2</td><td>False</td><td>2019-02-08T23:30:13Z</td><td>https://github.com/bentley-historical-library/bhl_collection_setup</td></tr>
 <tr><td>Bentley Historical Library</td><td>bhl_aspace_accessrestrict_text</td><td>0</td><td>0</td><td>False</td><td>2019-02-06T15:02:43Z</td><td>https://github.com/bentley-historical-library/bhl_aspace_accessrestrict_text</td></tr>
 <tr><td>Bentley Historical Library</td><td>bhlaspaceapiclient</td><td>0</td><td>0</td><td>False</td><td>2019-04-23T17:02:17Z</td><td>https://github.com/bentley-historical-library/bhlaspaceapiclient</td></tr>
-<tr><td>Bentley Historical Library</td><td>baroque</td><td>2</td><td>6</td><td>False</td><td>2019-11-22T18:49:35Z</td><td>https://github.com/bentley-historical-library/baroque</td></tr>
+<tr><td>Bentley Historical Library</td><td>baroque</td><td>2</td><td>7</td><td>False</td><td>2019-11-22T18:49:35Z</td><td>https://github.com/bentley-historical-library/baroque</td></tr>
 <tr><td>Bentley Historical Library</td><td>bhl_git_training</td><td>0</td><td>8</td><td>False</td><td>2019-09-13T11:49:25Z</td><td>https://github.com/bentley-historical-library/bhl_git_training</td></tr>
 <tr><td>University of Michigan Library</td><td>phdb</td><td>0</td><td>0</td><td>False</td><td>2014-01-25T06:20:41Z</td><td>https://github.com/mlibrary/phdb</td></tr>
 <tr><td>University of Michigan Library</td><td>traject_umich_format</td><td>4</td><td>2</td><td>False</td><td>2019-07-02T17:02:32Z</td><td>https://github.com/mlibrary/traject_umich_format</td></tr>
@@ -3764,7 +3763,7 @@ tr:nth-child(even) {
 <tr><td>Virginia Polytechnic and State University Libraries</td><td>aws-batch-iiif-generator</td><td>0</td><td>0</td><td>False</td><td>2019-09-13T14:26:59Z</td><td>https://github.com/VTUL/aws-batch-iiif-generator</td></tr>
 <tr><td>Virginia Polytechnic and State University Libraries</td><td>giiif</td><td>0</td><td>0</td><td>False</td><td>2019-08-12T15:57:14Z</td><td>https://github.com/VTUL/giiif</td></tr>
 <tr><td>Virginia Polytechnic and State University Libraries</td><td>geoblacklight-v2</td><td>0</td><td>0</td><td>False</td><td>2019-09-30T19:17:01Z</td><td>https://github.com/VTUL/geoblacklight-v2</td></tr>
-<tr><td>Opening Books and the National Corpus of Graduate Research by the University Libraries at Virginia Tech</td><td>CS6604-ETD</td><td>0</td><td>1</td><td>False</td><td>2019-11-29T02:36:14Z</td><td>https://github.com/Opening-ETDs/CS6604-ETD</td></tr>
+<tr><td>Opening Books and the National Corpus of Graduate Research by the University Libraries at Virginia Tech</td><td>CS6604-ETD</td><td>0</td><td>1</td><td>False</td><td>2019-11-29T14:39:16Z</td><td>https://github.com/Opening-ETDs/CS6604-ETD</td></tr>
 <tr><td>Opening Books and the National Corpus of Graduate Research by the University Libraries at Virginia Tech</td><td>ETDMiner</td><td>0</td><td>0</td><td>False</td><td>2019-10-24T17:10:10Z</td><td>https://github.com/Opening-ETDs/ETDMiner</td></tr>
 <tr><td>Opening Books and the National Corpus of Graduate Research by the University Libraries at Virginia Tech</td><td>etd-subject-classification</td><td>0</td><td>0</td><td>False</td><td>2019-11-16T22:14:28Z</td><td>https://github.com/Opening-ETDs/etd-subject-classification</td></tr>
 <tr><td>Opening Books and the National Corpus of Graduate Research by the University Libraries at Virginia Tech</td><td>etd-reference-parsing</td><td>0</td><td>0</td><td>False</td><td>2019-11-16T22:45:52Z</td><td>https://github.com/Opening-ETDs/etd-reference-parsing</td></tr>
@@ -4219,7 +4218,7 @@ tr:nth-child(even) {
 <tr><td>SAO/NASA Astrophysics Data System</td><td>flask-statsd</td><td>0</td><td>0</td><td>True</td><td>2014-07-23T18:56:53Z</td><td>https://github.com/adsabs/flask-statsd</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>adslogging-forwarder</td><td>0</td><td>0</td><td>False</td><td>2014-06-27T15:42:48Z</td><td>https://github.com/adsabs/adslogging-forwarder</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>solr-benchmarking</td><td>1</td><td>0</td><td>False</td><td>2014-07-28T08:32:14Z</td><td>https://github.com/adsabs/solr-benchmarking</td></tr>
-<tr><td>SAO/NASA Astrophysics Data System</td><td>adsws</td><td>1</td><td>12</td><td>False</td><td>2019-11-22T02:30:57Z</td><td>https://github.com/adsabs/adsws</td></tr>
+<tr><td>SAO/NASA Astrophysics Data System</td><td>adsws</td><td>1</td><td>12</td><td>False</td><td>2019-11-29T15:33:52Z</td><td>https://github.com/adsabs/adsws</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>metrics_service</td><td>0</td><td>3</td><td>False</td><td>2018-08-31T23:44:39Z</td><td>https://github.com/adsabs/metrics_service</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>psql_gut</td><td>0</td><td>1</td><td>False</td><td>2014-10-29T19:54:33Z</td><td>https://github.com/adsabs/psql_gut</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>citation_helper_service</td><td>0</td><td>3</td><td>False</td><td>2018-08-31T23:15:31Z</td><td>https://github.com/adsabs/citation_helper_service</td></tr>
@@ -4227,7 +4226,7 @@ tr:nth-child(even) {
 <tr><td>SAO/NASA Astrophysics Data System</td><td>adsabs-webservices-blueprint</td><td>0</td><td>7</td><td>False</td><td>2018-12-12T20:46:33Z</td><td>https://github.com/adsabs/adsabs-webservices-blueprint</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>vis-services</td><td>0</td><td>8</td><td>False</td><td>2019-05-03T21:18:53Z</td><td>https://github.com/adsabs/vis-services</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>recommender_service_defunct</td><td>2</td><td>3</td><td>False</td><td>2019-10-21T11:07:50Z</td><td>https://github.com/adsabs/recommender_service_defunct</td></tr>
-<tr><td>SAO/NASA Astrophysics Data System</td><td>solr-service</td><td>1</td><td>6</td><td>False</td><td>2019-11-27T22:13:55Z</td><td>https://github.com/adsabs/solr-service</td></tr>
+<tr><td>SAO/NASA Astrophysics Data System</td><td>solr-service</td><td>1</td><td>6</td><td>False</td><td>2019-11-29T15:28:15Z</td><td>https://github.com/adsabs/solr-service</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>export_service</td><td>1</td><td>4</td><td>False</td><td>2019-11-19T19:54:38Z</td><td>https://github.com/adsabs/export_service</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>flask-discoverer</td><td>3</td><td>5</td><td>False</td><td>2019-08-28T15:46:09Z</td><td>https://github.com/adsabs/flask-discoverer</td></tr>
 <tr><td>SAO/NASA Astrophysics Data System</td><td>adsabs.github.io</td><td>5</td><td>9</td><td>False</td><td>2019-11-20T16:54:54Z</td><td>https://github.com/adsabs/adsabs.github.io</td></tr>
