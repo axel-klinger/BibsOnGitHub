@@ -28,10 +28,6 @@ html_string = '''
           text-align: left;
           padding: 8px;
         }
-
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
         </style>
     </head>
     <body>
