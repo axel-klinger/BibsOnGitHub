@@ -46,11 +46,11 @@ html_string = '''
   <tr>
     <th>Organisation</th>
     <th>Repository</th>
+    <th>License</th>
     <th>Stars</th>
     <th>Forks</th>
     <th>Forked</th>
     <th>Last updated</th>
-    <th>URL</th>
   </tr>
   </thead>
   <tbody id="myTable">
@@ -61,7 +61,11 @@ with open("all-libs.json", 'r') as json_file:
       for repo in org['repositories']:
           # print(type(repo))
           if type(repo) is dict:
-              html_string += "<tr><td>" + org['name'] + "</td><td>" + repo['name'] + "</td><td>" + str(repo['stargazers_count']) + "</td><td>" + str(repo['forks_count']) + "</td><td>" + str(repo['fork']) + "</td><td>" + repo['updated_at'] + "</td><td>" + repo['html_url'] + "</td></tr>\n"
+              if str(repo['license']) != "None":
+                  license = repo['license']['spdx_id']
+              else:
+                  license = " "
+              html_string += "<tr><td>" + org['name'] + "</td><td><a href=\"" + repo['html_url'] + "\">" + repo['name'] + "</a></td><td>" + license + "</td><td>" + str(repo['stargazers_count']) + "</td><td>" + str(repo['forks_count']) + "</td><td>" + str(repo['fork']) + "</td><td>" + repo['updated_at'] + "</td></tr>\n"
 
 html_string += '''
   </tbody>
