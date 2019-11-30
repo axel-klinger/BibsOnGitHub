@@ -29,11 +29,16 @@ for line in lines:
     json_result_string += "      \"url\": \"" + link.replace("\n","") + "\",\n"
     json_result_string += "      \"repositories\": "
     github_orga = re.findall("\/([^\/^$]+)$", link)[0].replace("\n","")
-    print(github_orga)
+    print(country + "   " + city + "   " + github_orga)
 
-    api_url = "https://api.github.com/orgs/" + github_orga + "/repos?per_page=500"
-    print(api_url)
-    repo_data = github_session.get(url=api_url).json()
+    api_url = "https://api.github.com/orgs/" + github_orga + "/repos?per_page=100&page=1"
+
+    res = github_session.get(url=api_url)
+    repo_data = res.json()
+    while 'next' in res.links.keys():
+        res=requests.get(res.links['next']['url'])
+        repo_data.extend(res.json())
+
     json_result_string += json.dumps(repo_data, indent=4, ensure_ascii=0) + "\n"
     json_result_string += "    },\n"
 
