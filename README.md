@@ -4,8 +4,8 @@ A list of libraries on GitHub based on [hbunke/BibsOnGitHub](https://github.com/
 
 If you know a library that is not on the list, please comment on Issue "[New libraries](https://github.com/axel-klinger/BibsOnGitHub/issues/2)"
 
-* [List of libraries](libraries.md)
-* [List of repositories (with filter)](repositories.csv)
+* [List of libraries](https://axel-klinger.github.io/BibsOnGitHub/libraries.md)
+* [List of repositories](https://axel-klinger.github.io/BibsOnGitHub/repositories.html)
 
 Coming soon
 * [List of libraries on GitLab](libraries-gitlab.csv)
@@ -13,8 +13,9 @@ Coming soon
 ## Add new entries
 
 * edit [libraries.csv](libraries.csv)
-* run [csv-to-json.py](csv-to-json.py) (GitHub Access Token required for more than 60 requests per hour)
-* run [json-to-markdown-table.py](json-to-markdown-table.py) to generate the table
+* run [csv-to-json.py](scripts/csv-to-json.py) (GitHub Access Token required for more than 60 requests per hour)
+* run [json-to-html-libs.py](scripts/json-to-html-libs.py) to generate the table libraries
+* run [json-to-html-repos.py](scripts/json-to-html-repos.py) to generate the table repositories
 * DO NOT COMMIT your personal access token!
 
 
