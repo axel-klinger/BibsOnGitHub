@@ -40,7 +40,7 @@ with open("all-libs.json", 'r') as json_file:
                   license = repo['license']['spdx_id']
               else:
                   license = " "
-              html_string += "<tr><td>" + org['name'] + "</td><td><a href=\"" + repo['html_url'] + "\">" + repo['name'] + "</a></td><td>" + license + "</td><td>" + str(repo['stargazers_count']) + "</td><td>" + str(repo['forks_count']) + "</td><td>" + str(repo['fork']) + "</td><td>" + repo['updated_at'] + "</td></tr>\n"
+              html_string += "<tr><td>" + org['name'] + "</td><td><a href=\"" + repo['html_url'] + "\">" + repo['name'] + "</a></td><td>" + license + "</td><td>" + str(repo['stargazers_count']) + "</td><td>" + str(repo['forks_count']) + "</td><td>" + str(repo['fork']) + "</td><td>" + repo['updated_at'].split("T")[0] + "</td></tr>\n"
 
 html_string += '''
   </tbody>

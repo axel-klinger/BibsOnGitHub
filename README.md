@@ -4,7 +4,7 @@ A list of libraries on GitHub based on [hbunke/BibsOnGitHub](https://github.com/
 
 If you know a library that is not on the list, please comment on Issue "[New libraries](https://github.com/axel-klinger/BibsOnGitHub/issues/2)"
 
-* [List of libraries](https://axel-klinger.github.io/BibsOnGitHub/libraries.md)
+* [List of libraries](https://axel-klinger.github.io/BibsOnGitHub/libraries.html)
 * [List of repositories](https://axel-klinger.github.io/BibsOnGitHub/repositories.html)
 
 Coming soon
