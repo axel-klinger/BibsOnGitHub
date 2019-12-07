@@ -1,14 +1,18 @@
-# Libraries on GitHub
+# Open Source Development in Libraries
 
-A list of libraries on GitHub based on [hbunke/BibsOnGitHub](https://github.com/hbunke/BibsOnGitHub) and [Code4LibWiki](http://wiki.code4lib.org/Libraries_Sharing_Code).
+Lists of libraries on GitHub and GitLab based on [hbunke/BibsOnGitHub](https://github.com/hbunke/BibsOnGitHub) and [Code4LibWiki](http://wiki.code4lib.org/Libraries_Sharing_Code).
 
 If you know a library that is not on the list, please comment on Issue "[New libraries](https://github.com/axel-klinger/BibsOnGitHub/issues/2)"
 
+### Libraries on GitHub
+* [Source List](libraries.csv)
 * [List of libraries](https://axel-klinger.github.io/BibsOnGitHub/libraries.html)
 * [List of repositories](https://axel-klinger.github.io/BibsOnGitHub/repositories.html)
 
-Coming soon
-* [List of libraries on GitLab](libraries-gitlab.csv)
+### Libraries on GitLab
+* [Source List](libraries-gitlab.csv)
+* [List of libraries](https://axel-klinger.github.io/BibsOnGitHub/libraries-gitlab.html)
+* [List of repositories](https://axel-klinger.github.io/BibsOnGitHub/repositories-gitlab.html)
 
 ## Add new entries
 
